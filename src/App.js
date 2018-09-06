@@ -37,6 +37,9 @@ class App extends Component {
     return (
       <Form
         onSubmit={(values) => { console.log(values) }}
+        initialValues={{
+          radioGroup: 'optionOne'
+        }}
         render={({ handleSubmit, values }) => (
           <form onSubmit={handleSubmit}>
             <label>
@@ -61,7 +64,7 @@ class App extends Component {
               Option Two
             </label>
 
-            <Condition when="radioGroup" is="two">
+            <Condition when="radioGroup" is="optionTwo">
               Only visible when "option two" is selected.
               <Field type="text" component="input" id="textField" name="textField" />
             </Condition>
