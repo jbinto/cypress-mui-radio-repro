@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^3.0.2",
+    "final-form": "^4.10.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-final-form": "^3.6.5",
     "react-scripts": "1.1.5"
   },
   "scripts": {
@@ -12,5 +15,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "cypress": "^3.1.0"
   }
 }
